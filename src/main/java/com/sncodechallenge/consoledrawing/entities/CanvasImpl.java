@@ -1,4 +1,4 @@
-package com.sncodechallenge.consoledrawing.geometricEntities;
+package com.sncodechallenge.consoledrawing.entities;
 
 public class CanvasImpl implements Canvas {
     private static final char VERT_EDGE = '|';

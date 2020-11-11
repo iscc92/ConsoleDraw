@@ -1,6 +1,6 @@
-package com.sncodechallenge.consoledrawing.geometricEntities;
+package com.sncodechallenge.consoledrawing.entities;
 
-import com.sncodechallenge.consoledrawing.geometricValidations.Validations;
+import com.sncodechallenge.consoledrawing.validations.Validations;
 
 import java.util.Objects;
 

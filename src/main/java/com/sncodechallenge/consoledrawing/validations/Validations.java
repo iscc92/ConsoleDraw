@@ -1,4 +1,4 @@
-package com.sncodechallenge.consoledrawing.geometricValidations;
+package com.sncodechallenge.consoledrawing.validations;
 
 public class Validations {
 

@@ -1,4 +1,4 @@
-package com.sncodechallenge.consoledrawing.geometricEntities;
+package com.sncodechallenge.consoledrawing.entities;
 
 public interface Canvas {
 
