@@ -2,6 +2,7 @@ package com.sncodechallenge.consoledrawing.entities;
 
 public interface Canvas {
 
-    void drawGeometricEntity(GeometricEntity geoEntity);
+    void directToGeometricEntity(GeometricEntity geometricEntity);
 
+    String displayCanvas();
 }

@@ -1,6 +1,6 @@
 package com.sncodechallenge.consoledrawing.operations;
 
-public class CreateOperation implements Operation {
+public class CreateCanvas implements Operation {
 
     private int height;
     private int width;
@@ -9,7 +9,7 @@ public class CreateOperation implements Operation {
         return height;
     }
 
-    public CreateOperation setHeight(int height) {
+    public CreateCanvas setHeight(int height) {
         this.height = height;
         return this;
     }
@@ -18,12 +18,12 @@ public class CreateOperation implements Operation {
         return width;
     }
 
-    public CreateOperation setWidth(int width) {
+    public CreateCanvas setWidth(int width) {
         this.width = width;
         return this;
     }
 
-    public CreateOperation(String... params) {
+    public CreateCanvas(String... params) {
         if (params.length < 2) {
             throw new RuntimeException("Operation expects 2 params - w and h");
         }
