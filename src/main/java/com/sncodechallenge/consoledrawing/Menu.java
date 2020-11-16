@@ -3,6 +3,9 @@ package com.sncodechallenge.consoledrawing;
 import com.sncodechallenge.consoledrawing.entities.Canvas;
 import com.sncodechallenge.consoledrawing.entities.CanvasImpl;
 import com.sncodechallenge.consoledrawing.entities.EntitiesFactory;
+import com.sncodechallenge.consoledrawing.exceptions.InvalidGeometricEntityException;
+import com.sncodechallenge.consoledrawing.exceptions.InvalidInputException;
+import com.sncodechallenge.consoledrawing.exceptions.InvalidOperationException;
 import com.sncodechallenge.consoledrawing.operations.*;
 
 import java.util.Scanner;
@@ -24,22 +27,22 @@ class Menu {
                 + "Please, enter the desired operation according to instructions: ");
 
         while (true) {
-            execute(input.nextLine());
+            executeMenu(input.nextLine());
             System.out.println("Please, enter the desired operation according to instructions: ");
         }
 
     }
 
-    private void execute(String input) {
+    private void executeMenu(String input) {
         Operation operation = null;
 
         try {
             operation = operationsManager.getOperation(input);
-        } catch (InvalidOperationException e) {
-            System.out.println("An invalid operation was requested!");
+        } catch (InvalidOperationException invalidOperationException) {
+            System.out.println("An invalid operation was requested. Please try again!");
         } catch (InvalidInputException invalidInputException) {
-            System.out.println("Operation is not well formulated: " + invalidInputException.getMessage());
-            System.out.println("Please, introduce accordingly:  " + invalidInputException);
+            System.out.println("Operation is not well enunciated.");
+            System.out.println("Please, refer to instructions and introduce parameters accordingly.");
         }
 
         if (operation instanceof CreateCanvas) {
@@ -52,7 +55,7 @@ class Menu {
                 canvas.directToGeometricEntity(entitiesFactory.getGeometricEntity((DrawEntityOperation) operation));
                 System.out.println(canvas.displayCanvas());
 
-            } catch (InvalidGeometricEntity e) {
+            } catch (InvalidGeometricEntityException invalidGeometricEntityException) {
                 System.out.println(
                         "The introduced Geometric Entity is not supported by current version of Console Drawing");
             }

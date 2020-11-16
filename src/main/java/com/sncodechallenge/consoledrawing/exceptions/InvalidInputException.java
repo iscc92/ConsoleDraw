@@ -1,6 +1,7 @@
-package com.sncodechallenge.consoledrawing.operations;
+package com.sncodechallenge.consoledrawing.exceptions;
 
 public class InvalidInputException extends RuntimeException {
+
 
 
 }
