@@ -15,9 +15,9 @@ public class CanvasImpl implements Canvas {
     private String headAndFooter;
 
 
-    public CanvasImpl(int height, int width) {
-        width = this.width;
-        height = this.height;
+    public CanvasImpl(int inputHeight, int inputWidth) {
+        width = inputWidth;
+        height = inputHeight;
         cachedCanvas = new char[this.height][this.width];
 
         Arrays.stream(
@@ -27,7 +27,7 @@ public class CanvasImpl implements Canvas {
         headAndFooter =
                 Stream.generate(
                         () -> String.valueOf(HORZ_EDGE))
-                        .limit(width).collect(Collectors.joining());
+                        .limit(this.width + 2).collect(Collectors.joining());
 
     }
 
@@ -43,7 +43,7 @@ public class CanvasImpl implements Canvas {
 
     @Override
     public String displayCanvas() {
-        StringBuilder canvasAssembler = null;
+        StringBuilder canvasAssembler = new StringBuilder();
         canvasAssembler.append(headAndFooter).append("\n");
 
         for (int r = 0; r < this.height; r++) {
@@ -53,7 +53,7 @@ public class CanvasImpl implements Canvas {
             }
             canvasAssembler.append(VERT_EDGE).append("\n");
         }
-        canvasAssembler.append(headAndFooter).append("\n");
+        canvasAssembler.append(headAndFooter);
         return canvasAssembler.toString();
     }
 
@@ -63,21 +63,18 @@ public class CanvasImpl implements Canvas {
         if (coordinatesAreInsideRange(x1, y1) && coordinatesAreInsideRange(x2, y2)) {
             for (int r = y1 - 1; r <= y2 - 1 && r < height; r++) {
                 for (int c = x1 - 1; c <= x2 - 1 && c < height; c++) {
-                    cachedCanvas[r][c] = LINE;
+                    cachedCanvas[r][c] = CanvasImpl.LINE;
                 }
             }
         }
     }
 
-    private void drawRectangle(int x1, int x2, int y1, int y2) {
-        //top line (constant y coordinate)
+    private void drawRectangle(int x1, int y1, int x2, int y2) {
         drawLine(x1, y1, x2, y1);
-        //right line (constant x coordinate)
         drawLine(x2, y1, x2, y2);
-        //bottom line (constant y coordinate)
         drawLine(x1, y2, x2, y2);
-        //right line (constant x coordinate)
         drawLine(x1, y1, x1, y2);
+
     }
 
     ////// Auxiliary Methods //////

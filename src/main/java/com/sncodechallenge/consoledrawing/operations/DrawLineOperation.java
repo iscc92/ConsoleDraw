@@ -24,7 +24,8 @@ public class DrawLineOperation implements DrawEntityOperation {
 
         if (x1 != x2 && y1 != y2) {
             throw new IllegalArgumentException(
-                    (x1 + "," + x2 + "," + "," + y1 + "," + y2) + " - Diagonal lines are not supported");
+                    (x1 + "," + x2 + "," + y1 + "," + y2) + " - Diagonal lines are not supported");
+
         }
     }
 

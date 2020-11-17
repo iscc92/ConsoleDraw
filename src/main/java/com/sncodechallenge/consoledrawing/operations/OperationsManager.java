@@ -18,7 +18,7 @@ public class OperationsManager {
             case "R":
                 return new DrawRectangleOperation(dimensions);
             case "Q":
-                new Quit();
+                return new Quit();
 
             default:
                 System.out.println("An invalid operation was requested!");
