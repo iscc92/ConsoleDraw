@@ -2,7 +2,6 @@ package com.sncodechallenge.consoledrawing;
 
 import com.sncodechallenge.consoledrawing.entities.Canvas;
 import com.sncodechallenge.consoledrawing.entities.CanvasImpl;
-import com.sncodechallenge.consoledrawing.entities.Line;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -12,7 +11,7 @@ public class CanvasImplTest {
 
     @Before
     public void wire() throws Exception {
-        canvas = new CanvasImpl(3,18);
+        canvas = new CanvasImpl(3, 18);
     }
 
     @Test
@@ -25,18 +24,16 @@ public class CanvasImplTest {
                         "|                  |\n" +
                         "--------------------");
     }
-
 /***
-    @Test
-    public void testDisplayCanvasWithVerticalLine() throws Exception {
-        Line line = new Line(4,1,4,3);
-        canvas.directToGeometricEntity(line);
+ @Test public void testDisplayCanvasWithVerticalLine() throws Exception {
+ Line line = new Line(4,1,4,3);
+ canvas.directToGeometricEntity(line);
 
-        Assert.assertEquals(canvas.displayCanvas(),
-                "--------------------\n" +
-                        "|   x              |\n" +
-                        "|   x              |\n" +
-                        "|   x              |\n" +
-                        "--------------------");
-    } ***/
+ Assert.assertEquals(canvas.displayCanvas(),
+ "--------------------\n" +
+ "|   x              |\n" +
+ "|   x              |\n" +
+ "|   x              |\n" +
+ "--------------------");
+ } ***/
 }

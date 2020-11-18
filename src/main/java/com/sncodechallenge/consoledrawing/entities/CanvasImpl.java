@@ -28,7 +28,6 @@ public class CanvasImpl implements Canvas {
                 Stream.generate(
                         () -> String.valueOf(HORZ_EDGE))
                         .limit(this.width + 2).collect(Collectors.joining());
-
     }
 
     @Override
@@ -59,7 +58,18 @@ public class CanvasImpl implements Canvas {
 
     ////// Geometric Entities individual drawing logic //////
 
-    private void drawLine(int x1, int x2, int y1, int y2) {
+    private void drawLine(int x1, int y1, int x2, int y2) {
+        drawEntity(x1, y1, x2, y2);
+    }
+
+    private void drawRectangle(int x1, int y1, int x2, int y2) {
+        drawEntity(x1, y1, x2, y2);
+        cleanInnerPointsOfEntity(x1, y1, x2, y2);
+    }
+
+    ////// Auxiliary Methods //////
+
+    private void drawEntity(int x1, int x2, int y1, int y2) {
         if (coordinatesAreInsideRange(x1, y1) && coordinatesAreInsideRange(x2, y2)) {
             for (int r = y1 - 1; r <= y2 - 1 && r < height; r++) {
                 for (int c = x1 - 1; c <= x2 - 1 && c < height; c++) {
@@ -69,15 +79,15 @@ public class CanvasImpl implements Canvas {
         }
     }
 
-    private void drawRectangle(int x1, int y1, int x2, int y2) {
-        drawLine(x1, y1, x2, y1);
-        drawLine(x2, y1, x2, y2);
-        drawLine(x1, y2, x2, y2);
-        drawLine(x1, y1, x1, y2);
-
+    private void cleanInnerPointsOfEntity(int x1, int x2, int y1, int y2) {
+        if (coordinatesAreInsideRange(x1, y1) && coordinatesAreInsideRange(x2, y2)) {
+            for (int r = y1 ; r <= y2 - 2  && r < height; r++) {
+                for (int c = x1 ; c <= x2 - 2 && c < height; c++) {
+                    cachedCanvas[r][c] = ' ';
+                }
+            }
+        }
     }
-
-    ////// Auxiliary Methods //////
 
     private boolean coordinatesAreInsideRange(int x, int y) {
         return (x > 1 || x < width) || (y > 1 || y < height);
@@ -89,7 +99,7 @@ public class CanvasImpl implements Canvas {
         drawLine(line.getX1(), line.getY1(), line.getX2(), line.getY2());
     }
 
-    // For Rectangles (which are sets of Lines, nevertheless)
+    // For Rectangles
     private void forwardRectangle(Rectangle rectangle) {
         drawRectangle(rectangle.getX1(), rectangle.getY1(), rectangle.getX2(), rectangle.getY2());
     }

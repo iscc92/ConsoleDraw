@@ -10,7 +10,7 @@ public class DrawLineOperation implements DrawEntityOperation {
     public DrawLineOperation(String... params) {
 
         if (params.length < 4) {
-            throw new IllegalArgumentException("Operation expects 4 params - L, x1, x2, y1 and y2");
+            throw new IllegalArgumentException("Operation expects 4 params - L, x1, y1, x2 and y2");
         }
 
         x1 = Integer.parseInt(params[0]);
@@ -24,7 +24,7 @@ public class DrawLineOperation implements DrawEntityOperation {
 
         if (x1 != x2 && y1 != y2) {
             throw new IllegalArgumentException(
-                    (x1 + "," + x2 + "," + y1 + "," + y2) + " - Diagonal lines are not supported");
+                    (x1 + "," + y1 + "," + x1 + "," + y2) + " - Diagonal lines are not supported");
 
         }
     }
