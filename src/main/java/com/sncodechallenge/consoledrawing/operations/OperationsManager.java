@@ -1,10 +1,13 @@
 package com.sncodechallenge.consoledrawing.operations;
 
+import com.sncodechallenge.consoledrawing.exceptions.InvalidInputException;
+import com.sncodechallenge.consoledrawing.exceptions.InvalidOperationException;
+
 import java.util.Arrays;
 
 public class OperationsManager {
 
-    public Operation getOperation(String inputFromScanner) throws RuntimeException {
+    public Operation getOperation(String inputFromScanner) throws InvalidInputException, InvalidOperationException {
         inputFromScanner = inputFromScanner.trim().replaceAll(" {2,}", " ");
         String[] discreteInput = inputFromScanner.split(" ");
         String entity = discreteInput[0].toUpperCase();
@@ -19,12 +22,10 @@ public class OperationsManager {
                 return new DrawRectangleOperation(dimensions);
             case "Q":
                 return new Quit();
-
             default:
-                System.out.println("An invalid operation was requested!");
+                throw new InvalidOperationException();
 
         }
-        return null;
     }
 
 

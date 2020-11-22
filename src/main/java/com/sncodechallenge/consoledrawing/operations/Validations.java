@@ -1,4 +1,4 @@
-package com.sncodechallenge.consoledrawing.validations;
+package com.sncodechallenge.consoledrawing.operations;
 
 public class Validations {
 

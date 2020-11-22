@@ -1,3 +1,9 @@
-/Users/inescalcoa/Desktop/SN/SN-codechallenge-IC/src/test/java/com/sncodechallenge/consoledrawing/RectangleTest.java
-/Users/inescalcoa/Desktop/SN/SN-codechallenge-IC/src/test/java/com/sncodechallenge/consoledrawing/LineTest.java
-/Users/inescalcoa/Desktop/SN/SN-codechallenge-IC/src/test/java/com/sncodechallenge/consoledrawing/CanvasImplTest.java
+/Users/inescalcoa/Desktop/SN/SN-codechallenge-IC/src/test/java/com/sncodechallenge/consoledrawing/operations/CreateCanvasTest.java
+/Users/inescalcoa/Desktop/SN/SN-codechallenge-IC/src/test/java/com/sncodechallenge/consoledrawing/entities/CanvasImplTest.java
+/Users/inescalcoa/Desktop/SN/SN-codechallenge-IC/src/test/java/com/sncodechallenge/consoledrawing/operations/DrawLineOperationTest.java
+/Users/inescalcoa/Desktop/SN/SN-codechallenge-IC/src/test/java/com/sncodechallenge/consoledrawing/operations/DrawRectangleOperationTest.java
+/Users/inescalcoa/Desktop/SN/SN-codechallenge-IC/src/test/java/com/sncodechallenge/consoledrawing/entities/EntitiesFactoryTest.java
+/Users/inescalcoa/Desktop/SN/SN-codechallenge-IC/src/test/java/com/sncodechallenge/consoledrawing/operations/OperationsManagerTest.java
+/Users/inescalcoa/Desktop/SN/SN-codechallenge-IC/src/test/java/com/sncodechallenge/consoledrawing/entities/LineTest.java
+/Users/inescalcoa/Desktop/SN/SN-codechallenge-IC/src/test/java/com/sncodechallenge/consoledrawing/operations/ValidationsTest.java
+/Users/inescalcoa/Desktop/SN/SN-codechallenge-IC/src/test/java/com/sncodechallenge/consoledrawing/entities/RectangleTest.java

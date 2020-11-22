@@ -67,6 +67,8 @@ public class Main {
 
     }
 
+    ////// Auxiliary Methods //////
+
     private static void initiateCanvas(CreateCanvas operation) {
         canvas = new CanvasImpl(operation.getWidth(), operation.getHeight());
         System.out.println(canvas.displayCanvas());

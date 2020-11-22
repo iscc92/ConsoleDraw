@@ -1,4 +1,5 @@
 /Users/inescalcoa/Desktop/SN/SN-codechallenge-IC/src/main/java/com/sncodechallenge/consoledrawing/operations/Operation.java
+/Users/inescalcoa/Desktop/SN/SN-codechallenge-IC/src/main/java/com/sncodechallenge/consoledrawing/operations/Validations.java
 /Users/inescalcoa/Desktop/SN/SN-codechallenge-IC/src/main/java/com/sncodechallenge/consoledrawing/entities/Rectangle.java
 /Users/inescalcoa/Desktop/SN/SN-codechallenge-IC/src/main/java/com/sncodechallenge/consoledrawing/operations/DrawRectangleOperation.java
 /Users/inescalcoa/Desktop/SN/SN-codechallenge-IC/src/main/java/com/sncodechallenge/consoledrawing/entities/CanvasImpl.java
@@ -11,7 +12,6 @@
 /Users/inescalcoa/Desktop/SN/SN-codechallenge-IC/src/main/java/com/sncodechallenge/consoledrawing/operations/DrawLineOperation.java
 /Users/inescalcoa/Desktop/SN/SN-codechallenge-IC/src/main/java/com/sncodechallenge/consoledrawing/entities/Line.java
 /Users/inescalcoa/Desktop/SN/SN-codechallenge-IC/src/main/java/com/sncodechallenge/consoledrawing/Main.java
-/Users/inescalcoa/Desktop/SN/SN-codechallenge-IC/src/main/java/com/sncodechallenge/consoledrawing/validations/Validations.java
 /Users/inescalcoa/Desktop/SN/SN-codechallenge-IC/src/main/java/com/sncodechallenge/consoledrawing/exceptions/InvalidInputException.java
 /Users/inescalcoa/Desktop/SN/SN-codechallenge-IC/src/main/java/com/sncodechallenge/consoledrawing/entities/GeometricEntity.java
 /Users/inescalcoa/Desktop/SN/SN-codechallenge-IC/src/main/java/com/sncodechallenge/consoledrawing/operations/OperationsManager.java

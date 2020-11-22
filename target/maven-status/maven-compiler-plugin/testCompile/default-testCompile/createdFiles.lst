@@ -1,3 +1,9 @@
-com/sncodechallenge/consoledrawing/RectangleTest.class
-com/sncodechallenge/consoledrawing/CanvasImplTest.class
-com/sncodechallenge/consoledrawing/LineTest.class
+com/sncodechallenge/consoledrawing/operations/OperationsManagerTest.class
+com/sncodechallenge/consoledrawing/entities/EntitiesFactoryTest.class
+com/sncodechallenge/consoledrawing/entities/RectangleTest.class
+com/sncodechallenge/consoledrawing/entities/CanvasImplTest.class
+com/sncodechallenge/consoledrawing/operations/DrawLineOperationTest.class
+com/sncodechallenge/consoledrawing/operations/DrawRectangleOperationTest.class
+com/sncodechallenge/consoledrawing/operations/ValidationsTest.class
+com/sncodechallenge/consoledrawing/operations/CreateCanvasTest.class
+com/sncodechallenge/consoledrawing/entities/LineTest.class

@@ -1,6 +1,6 @@
 package com.sncodechallenge.consoledrawing.entities;
 
-import com.sncodechallenge.consoledrawing.validations.Validations;
+import com.sncodechallenge.consoledrawing.operations.Validations;
 
 import java.util.Objects;
 

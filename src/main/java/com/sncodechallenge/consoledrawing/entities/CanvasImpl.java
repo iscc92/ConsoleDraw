@@ -1,5 +1,6 @@
 package com.sncodechallenge.consoledrawing.entities;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -83,7 +84,7 @@ public class CanvasImpl implements Canvas {
         if (coordinatesAreInsideRange(x1, y1) && coordinatesAreInsideRange(x2, y2)) {
             for (int r = y1 ; r <= y2 - 2  && r < height; r++) {
                 for (int c = x1 ; c <= x2 - 2 && c < height; c++) {
-                    cachedCanvas[r][c] = ' ';
+                    cachedCanvas[r][c] = NO_FILL;
                 }
             }
         }

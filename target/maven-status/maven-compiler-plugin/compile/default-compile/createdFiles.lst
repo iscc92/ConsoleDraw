@@ -12,7 +12,7 @@ com/sncodechallenge/consoledrawing/operations/Quit.class
 com/sncodechallenge/consoledrawing/operations/OperationsManager.class
 com/sncodechallenge/consoledrawing/entities/EntitiesFactory.class
 com/sncodechallenge/consoledrawing/exceptions/InvalidInputException.class
-com/sncodechallenge/consoledrawing/validations/Validations.class
+com/sncodechallenge/consoledrawing/operations/Validations.class
 com/sncodechallenge/consoledrawing/operations/DrawEntityOperation.class
 com/sncodechallenge/consoledrawing/operations/DrawLineOperation.class
 com/sncodechallenge/consoledrawing/operations/Operation.class

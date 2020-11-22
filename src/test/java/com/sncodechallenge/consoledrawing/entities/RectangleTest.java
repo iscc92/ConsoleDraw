@@ -1,4 +1,4 @@
-package com.sncodechallenge.consoledrawing;
+package com.sncodechallenge.consoledrawing.entities;
 
 import com.sncodechallenge.consoledrawing.operations.DrawRectangleOperation;
 import org.junit.Test;
