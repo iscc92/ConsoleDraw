@@ -1,5 +1,5 @@
-# SN-codechallenge-IC
-Springer Nature code challenge by Inês Calçôa.
+# Codechallenge-IC
+Code challenge by Inês Calçôa.
 This is a simple implementation of a Console Drawing command app, using Java8, Maven and Junit library. 
 It is possible to visualize a geometric entity at each time. 
 
