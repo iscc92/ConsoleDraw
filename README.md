@@ -1,5 +1,4 @@
-# Codechallenge-IC
-Code challenge by Inês Calçôa.
+#Console Draw
 This is a simple implementation of a Console Drawing command app, using Java8, Maven and Junit library. 
 It is possible to visualize a geometric entity at each time. 
 
